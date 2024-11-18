@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Selectors</title>
+</head>
+<body>
+    <h2>This is a aaaaaaa</h2>
+    <p> This is afag ffavb gaag  gaaag </p>
+    <p> This is afag ..... lloo 11111!!!!!!!!!!!! </p>
+    <p> This is afag ffavb gaag  gaaag </p>
+    <p> This is afag ..... lloo 11111!!!!!!!!!!!! </p>
+
+    <p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+    <button>Click Me</button>
+
+    <script src="../wwwroot/lib/jquery/jquery.min.js"></script>
+    <script>
+        $(
+            function () {
+                $('button').on('click',
+                    function () {
+                        //$('*').hide(2000);
+                        /*$('p:last').hide(2000);*/
+
+                        $("a[target='_blank']").hide(1000);
+                    }
+                );
+            }
+        )
+    </script>
+
+</body>
+</html >

@@ -1,0 +1,8 @@
+﻿
+table tr td{
+    border : 1px #808080 solid;
+}
+
+table {
+    border-collapse:collapse;
+}

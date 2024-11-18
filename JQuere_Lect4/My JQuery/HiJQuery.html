@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" value="change page color" />
+    <p>
+        fhfdhgjhgfjghjghjghjghjkghkgkghkghkghjkjhkhjkkhkjhjhkkgk
+    </p>
+
+    <p id="hh">
+        1223344455555!!!!!!!!!
+    </p>
+
+    <p>
+        fhfdhgjhgfjghjghjghjghjkghkgkghkghkghjkjhkhjkkhkjhjhkkgk
+    </p>
+    <script src="../wwwroot/lib/jquery/jquery.min.js"></script>
+    <script>
+        //depricated طريقة منقرضة قديمة
+
+        //$(document).ready(
+        //    function () {
+
+        $(
+            function () {
+
+            //depricated طريقة منقرضة قديمة
+            //    $('input').click(
+            //        function () {
+            //            $('body').css('background-color','yellow');
+            //            $('#hh').hide(1000);
+            //        }
+            //    );
+
+                $('input').on('click',
+                    function () {
+                        $('body').css('background-color','yellow');
+                        $('#hh').hide(1000);
+                    }
+                );
+
+                $('p').on('click',
+                    function () {
+                        $(this).hide(1000);
+                    }
+
+                );
+            }
+        );
+    </script>
+</body>
+</html>

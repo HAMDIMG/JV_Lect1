@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Arrays</title>
+    <link href="arrays.css" rel="stylesheet" />
+</head>
+<body>
+    <script>
+        let fruits = ["Apple", "Orange", "Plum", "Grabes", "Dates"];
+        //document.write("original array : <br/>");
+        //document.write(fruits + "<br/><br/>");
+        //alert(fruits[0]);
+        //alert(fruits[1]);
+        //alert(fruits[2]);
+        //alert(fruits[3]);
+        //alert(fruits[4]);
+
+        //alert(fruits.length);
+
+        //alert(fruits);
+
+        //alert(fruits[fruits.length - 1]);
+
+        //let indexOfTheLastElement = fruits.length - 1;
+        ///* alert(fruits[indexOfTheLastElement])*/
+        //document.write(fruits[indexOfTheLastElement]); //اطبع على الدوكمينت
+
+        //fruits.pop(); //حذف عنصرمن الآخر
+        //document.write("array after calling .pop() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.shift(); //حذف عنصرمن الأول
+        //document.write("array after calling .shift() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.push("pear"); //إضافة عنصر جديد في الآخر في المثال pear
+        //document.write("array after calling .push() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //fruits.unshift("peach"); //إضافة عنصر جديد في الأول في المثال peach
+        //document.write("array after calling .unshift() : <br/>");
+        //document.write(fruits + "<br/><br/>");
+
+        //let indexOfTheLastElement = fruits.length - 1;
+        //document.write(fruits[indexOfTheLastElement]); // اكتشاف و طباعة العنصر الأخير
+        /////////////////////////////////////////////////////////////
+        document.write("<ul>");
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<li>" + fruits[i] + "</li>");
+        }
+        document.write("</ul>");
+        ///////////////////////////////////////////////////////////////////////
+        document.write("<table>");
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<tr><td>" + fruits[i] + "</td></tr>");
+        }
+        document.write("</table>");
+        /////////////////////////////////////////////////////////////////////
+        document.write("<select>");
+        for (let i = 0; i < fruits.length; i++) {
+            document.write("<option>" + fruits[i] + "</option>");
+        }
+        document.write("</select>");
+        /////////////////////////////////////////////////////////////////////
+        document.write("<ol>");
+
+        for (let key in fruits) {
+            /*document.write("<li>" + fruits[key] + "</li>");*/
+            document.write(`<li>${fruits[key]}</li>`);
+        }
+        document.write("</ol>");
+    </script>
+</body>
+</html>
